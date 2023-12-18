@@ -1,0 +1,12 @@
+<mat-toolbar style="justify-content: space-between;">
+    <span>COIN CHECKER</span>
+    <mat-form-field class="selectCurrency">
+      <mat-select (valueChange)="sendCurrency($event)" [(ngModel)]="selectedCurrency">
+        <mat-option selected value="USD">USD</mat-option>
+        <mat-option value="EUR">EUR</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </mat-toolbar>
+
+
+<router-outlet></router-outlet>
