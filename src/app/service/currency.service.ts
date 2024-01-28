@@ -9,11 +9,10 @@ export class CurrencyService {
   private selectedCurrency$ : BehaviorSubject<string> = new BehaviorSubject<string>("EUR");
   constructor() { }
 
-  getCurrency() {
+  getCurrency(){
     return this.selectedCurrency$.asObservable();
   }
-
-  setCurrency(currency : string) {
+  setCurrency(currency : string){
     this.selectedCurrency$.next(currency);
   }
 }

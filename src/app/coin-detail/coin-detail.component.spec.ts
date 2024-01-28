@@ -11,7 +11,9 @@ describe('CoinDetailComponent', () => {
       declarations: [ CoinDetailComponent ]
     })
     .compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CoinDetailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
